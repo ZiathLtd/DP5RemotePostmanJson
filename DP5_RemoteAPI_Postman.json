@@ -509,7 +509,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+							"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&1dr2_image=false",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -537,7 +537,7 @@
 									"description": "If the annotated image used for scan decode is required (default is false)"
 								},
 								{
-									"key": "linear_image",
+									"key": "1dr2_image",
 									"value": "false",
 									"description": "If the linear reader image for the container is required (default is false)"
 								}
@@ -556,7 +556,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&1dr2_image=false",
 									"protocol": "http",
 									"host": [
 										"localhost"
