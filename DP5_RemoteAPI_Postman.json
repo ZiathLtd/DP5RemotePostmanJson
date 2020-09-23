@@ -584,7 +584,7 @@
 											"description": "If the annotated image used for scan decode is required (default is false)"
 										},
 										{
-											"key": "linear_image",
+											"key": "1dr2_image",
 											"value": "false",
 											"description": "If the linear reader image for the container is required (default is false)"
 										}
