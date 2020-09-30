@@ -547,7 +547,7 @@
 					},
 					"response": [
 						{
-							"name": "Get Rack scan data",
+							"name": "Scan Rack",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
