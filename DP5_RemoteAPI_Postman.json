@@ -314,7 +314,7 @@
 								"status"
 							]
 						},
-						"description": "Fetch the linear reader status(the value returned are string value from enum LinearReaderStatus)"
+						"description": "Fetch the linear reader status (the values returned are string values from enum LinearReaderStatus)"
 					},
 					"response": [
 						{
@@ -373,7 +373,7 @@
 					]
 				},
 				{
-					"name": "Get Linear Reader Scan data",
+					"name": "Scan Linear Barcode",
 					"request": {
 						"method": "POST",
 						"header": [],
