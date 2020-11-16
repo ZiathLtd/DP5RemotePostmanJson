@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "9aa69d02-bce5-55d1-19dc-3bc6e64762e5",
-		"name": "DP5 Remote API Calls",
+		"_postman_id": "d861dd5e-2805-4ad1-85cf-75b1a939adf9",
+		"name": "DP5 Remote API Calls HTTPS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -13,17 +13,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/system/version",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/system/version",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -40,10 +36,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/system/version",
 									"protocol": "http",
@@ -95,17 +87,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/system/status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/system/status",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -122,10 +110,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/system/status",
 									"protocol": "http",
@@ -182,12 +166,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/system/shutdown",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/system/shutdown",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -200,7 +184,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Licence",
@@ -210,17 +195,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/licence",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/licence",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -236,10 +217,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/licence",
 									"protocol": "http",
@@ -285,7 +262,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Linear",
@@ -295,17 +273,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/status",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -314,7 +288,7 @@
 								"status"
 							]
 						},
-						"description": "Fetch the linear reader status (the values returned are string values from enum LinearReaderStatus)"
+						"description": "Fetch the linear reader status(the value returned are string value from enum LinearReaderStatus)"
 					},
 					"response": [
 						{
@@ -322,10 +296,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/1dr2/status",
 									"protocol": "http",
@@ -373,7 +343,7 @@
 					]
 				},
 				{
-					"name": "Scan Linear Barcode",
+					"name": "Get Linear Reader Scan data",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -382,12 +352,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/scan?image=false",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/scan?image=false",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -476,12 +446,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/frame",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/frame",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -494,13 +464,14 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Scan",
 			"item": [
 				{
-					"name": "Get Rack scan data",
+					"name": "Scan rack",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -509,12 +480,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&1dr2_image=false",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -537,7 +508,7 @@
 									"description": "If the annotated image used for scan decode is required (default is false)"
 								},
 								{
-									"key": "1dr2_image",
+									"key": "linear_image",
 									"value": "false",
 									"description": "If the linear reader image for the container is required (default is false)"
 								}
@@ -547,7 +518,7 @@
 					},
 					"response": [
 						{
-							"name": "Scan Rack",
+							"name": "Get Rack scan data",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
@@ -556,7 +527,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&1dr2_image=false",
+									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -584,7 +555,7 @@
 											"description": "If the annotated image used for scan decode is required (default is false)"
 										},
 										{
-											"key": "1dr2_image",
+											"key": "linear_image",
 											"value": "false",
 											"description": "If the linear reader image for the container is required (default is false)"
 										}
@@ -621,7 +592,8 @@
 						}
 					]
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Containers",
@@ -631,17 +603,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers/cube96sbs",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers/cube96sbs",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -659,17 +627,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -685,10 +649,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/containers",
 									"protocol": "http",
@@ -739,17 +699,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers/defaults?scanner_type=CUBE",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers/defaults?scanner_type=CUBE",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -772,10 +728,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/containers/defaults?scanner_type=CUBE",
 									"protocol": "http",
@@ -838,12 +790,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7&container_name=96 SBS rack 123&container_uid=cube96sbs1234&container_type=SBS96",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7&container_name=96 SBS rack 123&container_uid=cube96sbs1234&container_type=SBS96",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -967,12 +919,12 @@
 							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<container automatic=\"false\" defaultContainer=\"SBS96\" guid=\"\" name=\"96 SBS rack j\" numberOfCols=\"12\" numberOfRows=\"8\" uid=\"cubeV296sbs fthe\">\n    <decodeProcessors>\n        <decodeProcessor decode=\"FAST\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters/>\n        </decodeProcessor>\n        <decodeProcessor decode=\"DEEP\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters>\n                <entry>\n                    <key>BARCODE_RELATIVE_SIZE</key>\n                    <value>1</value>\n                </entry>\n            </parameters>\n        </decodeProcessor>\n    </decodeProcessors>\n    <locations>\n        <location row=\"1\" column=\"1\" x=\"370\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"2\" x=\"370\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"3\" x=\"370\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"4\" x=\"370\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"5\" x=\"370\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"6\" x=\"370\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"7\" x=\"370\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"8\" x=\"370\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"9\" x=\"370\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"10\" x=\"370\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"11\" x=\"370\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"12\" x=\"370\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"1\" x=\"565\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"2\" x=\"565\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"3\" x=\"565\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"4\" x=\"565\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"5\" x=\"565\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"6\" x=\"565\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"7\" x=\"565\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"8\" x=\"565\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"9\" x=\"565\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"10\" x=\"565\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"11\" x=\"565\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"12\" x=\"565\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"1\" x=\"760\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"2\" x=\"760\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"3\" x=\"760\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"4\" x=\"760\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"5\" x=\"760\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"6\" x=\"760\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"7\" x=\"760\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"8\" x=\"760\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"9\" x=\"760\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"10\" x=\"760\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"11\" x=\"760\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"12\" x=\"760\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"1\" x=\"955\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"2\" x=\"955\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"3\" x=\"955\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"4\" x=\"955\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"5\" x=\"955\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"6\" x=\"955\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"7\" x=\"955\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"8\" x=\"955\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"9\" x=\"955\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"10\" x=\"955\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"11\" x=\"955\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"12\" x=\"955\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"1\" x=\"1150\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"2\" x=\"1150\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"3\" x=\"1150\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"4\" x=\"1150\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"5\" x=\"1150\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"6\" x=\"1150\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"7\" x=\"1150\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"8\" x=\"1150\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"9\" x=\"1150\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"10\" x=\"1150\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"11\" x=\"1150\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"12\" x=\"1150\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"1\" x=\"1345\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"2\" x=\"1345\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"3\" x=\"1345\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"4\" x=\"1345\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"5\" x=\"1345\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"6\" x=\"1345\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"7\" x=\"1345\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"8\" x=\"1345\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"9\" x=\"1345\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"10\" x=\"1345\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"11\" x=\"1345\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"12\" x=\"1345\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"1\" x=\"1540\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"2\" x=\"1540\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"3\" x=\"1540\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"4\" x=\"1540\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"5\" x=\"1540\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"6\" x=\"1540\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"7\" x=\"1540\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"8\" x=\"1540\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"9\" x=\"1540\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"10\" x=\"1540\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"11\" x=\"1540\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"12\" x=\"1540\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"1\" x=\"1735\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"2\" x=\"1735\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"3\" x=\"1735\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"4\" x=\"1735\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"5\" x=\"1735\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"6\" x=\"1735\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"7\" x=\"1735\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"8\" x=\"1735\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"9\" x=\"1735\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"10\" x=\"1735\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"11\" x=\"1735\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"12\" x=\"1735\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n    </locations>\n    <orientationLocations>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"450\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"487\" y=\"547\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1619\" y=\"2477\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1655\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n    </orientationLocations>\n</container>\n"
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers/from_template?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers/from_template?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1068,12 +1020,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/containers/cubeV296sbs fthe",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/containers/cubeV296sbs fthe",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1086,7 +1038,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Scanners",
@@ -1096,17 +1049,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1122,10 +1071,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/scanners",
 									"protocol": "http",
@@ -1176,17 +1121,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1224,10 +1165,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
 									"protocol": "http",
@@ -1300,17 +1237,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1327,10 +1260,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
 									"protocol": "http",
@@ -1382,17 +1311,13 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7/connected",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7/connected",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1410,10 +1335,6 @@
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7/connected",
 									"protocol": "http",
@@ -1471,12 +1392,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners/search",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners/search",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1553,12 +1474,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGE_TEST&scanner_serial=MIRAGEDEV006&scanner_type=MIRAGE&scanner_ips=",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners?scanner_name=MIRAGE_TEST&scanner_serial=MIRAGEDEV006&scanner_type=MIRAGE&scanner_ips=",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1677,12 +1598,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGETEST1&scanner_serial&scanner_type=MIRAGE&scanner_ips=10.240.100.1",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners?scanner_name=MIRAGETEST1&scanner_serial=&scanner_type=MIRAGE&scanner_ips=10.240.100.1",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1795,12 +1716,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners/b44e6385-92a9-4c36-8c1a-908da7376fac",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners/b44e6385-92a9-4c36-8c1a-908da7376fac",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1823,12 +1744,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8777/dp5/remote/v1/scanners/8b4690e6-b367-45c6-a3f6-f855b39783b2/image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners/8b4690e6-b367-45c6-a3f6-f855b39783b2/image",
+							"protocol": "{{protocol}}",
 							"host": [
-								"localhost"
+								"{{host}}"
 							],
-							"port": "8777",
+							"port": "{{port}}",
 							"path": [
 								"dp5",
 								"remote",
@@ -1843,14 +1764,15 @@
 					"response": []
 				}
 			],
-			"description": "All remote calls related to scanner configured or connected or to be added in DP5"
+			"description": "All remote calls related to scanner configured or connected or to be added in DP5",
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1ccacf04-081f-46e1-bebb-6840f3f9252a",
+				"id": "6b548193-b33a-4260-88d1-c3261e37eaf1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1860,12 +1782,30 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9db1cab8-21ae-4fa6-9c0f-791c7f7ec238",
+				"id": "cbe812fc-a1f2-4401-97fe-12f03924f54c",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	]
+	],
+	"variable": [
+		{
+			"id": "e34ba62c-8e35-4364-8409-22d527a50da1",
+			"key": "protocol",
+			"value": "https"
+		},
+		{
+			"id": "5f347046-0ed9-48b0-b938-a62484815910",
+			"key": "port",
+			"value": "8778"
+		},
+		{
+			"id": "ef660729-0174-4a72-9e7b-d9bf03704aa2",
+			"key": "host",
+			"value": "localhost"
+		}
+	],
+	"protocolProfileBehavior": {}
 }
