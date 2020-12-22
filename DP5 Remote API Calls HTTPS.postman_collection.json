@@ -1122,7 +1122,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner_serial=CubeDEV&scanner_type=CUBE",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -1146,7 +1146,7 @@
 									"description": " if set true only return the container if it is currently connected,, default value is false"
 								},
 								{
-									"key": "scanner serial",
+									"key": "scanner_serial",
 									"value": "CubeDEV",
 									"description": "the scanner serial number, default value is empty"
 								},
@@ -1166,7 +1166,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner_serial=CubeDEV&scanner_type=CUBE",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1190,7 +1190,7 @@
 											"description": " if set true only return the container if it is currently connected,, default value is false"
 										},
 										{
-											"key": "scanner serial",
+											"key": "scanner_serial",
 											"value": "CubeDEV",
 											"description": "the scanner serial number, default value is empty"
 										},
