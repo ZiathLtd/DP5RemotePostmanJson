@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a28afd84-e00e-42ee-94d4-829e1ceb3362",
+		"_postman_id": "1d5d1da6-f2ab-4401-87f7-b4a1ce7a2f74",
 		"name": "DP5 Remote API Calls HTTP",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18361133"
 	},
 	"item": [
 		{
@@ -184,8 +185,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Licence",
@@ -262,8 +262,7 @@
 						}
 					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Linear",
@@ -274,7 +273,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/status",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/linear/status",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -284,7 +283,7 @@
 								"dp5",
 								"remote",
 								"v1",
-								"1dr2",
+								"linear",
 								"status"
 							]
 						},
@@ -352,7 +351,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/scan?image=false",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/linear/scan?image=false",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -362,7 +361,7 @@
 								"dp5",
 								"remote",
 								"v1",
-								"1dr2",
+								"linear",
 								"scan"
 							],
 							"query": [
@@ -446,7 +445,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/1dr2/frame",
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/linear/frame",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -456,7 +455,7 @@
 								"dp5",
 								"remote",
 								"v1",
-								"1dr2",
+								"linear",
 								"frame"
 							]
 						},
@@ -464,8 +463,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Scan",
@@ -591,9 +589,220 @@
 							"body": "{\n    \"scanId\": \"66b45849-019e-4e5c-af3f-a0bd4138a975\",\n    \"scanTime\": 1600261470488,\n    \"containerBarcode\": \"LVL100074983\",\n    \"tubeBarcode\": [\n        {\n            \"row\": 1,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        }\n    ],\n    \"orientationBarcode\": [],\n    \"scanTimeAnswer\": null,\n    \"containerName\": \"96 SBS rack\",\n    \"containerUid\": \"mirage96sbs\",\n    \"demoImage\": null,\n    \"containerGuid\": \"0743fa9a-3c9c-425f-9783-cc243d798cc1\",\n    \"rawImage\": null,\n    \"annotatedImage\": null,\n    \"linearReaderImage\": null\n}"
 						}
 					]
+				},
+				{
+					"name": "Get Raw Image of Scan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scan/f929965e-cde6-40d2-9ab1-d2ef16473f4b/raw_image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scan",
+								"f929965e-cde6-40d2-9ab1-d2ef16473f4b",
+								"raw_image"
+							]
+						},
+						"description": "Fetch the data for the rack scan that is placed on the scanner for the container unique id provided.\nImages like raw, annotated and linear images can be fetched based on the flag provided."
+					},
+					"response": [
+						{
+							"name": "Get Rack scan data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scan"
+									],
+									"query": [
+										{
+											"key": "container_uid",
+											"value": "mirage96sbs"
+										},
+										{
+											"key": "raw_image",
+											"value": "false",
+											"description": "If the raw image used for scan is required (default is false)"
+										},
+										{
+											"key": "annotated_image",
+											"value": "false",
+											"description": "If the annotated image used for scan decode is required (default is false)"
+										},
+										{
+											"key": "linear_image",
+											"value": "false",
+											"description": "If the linear reader image for the container is required (default is false)"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:04:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scanId\": \"66b45849-019e-4e5c-af3f-a0bd4138a975\",\n    \"scanTime\": 1600261470488,\n    \"containerBarcode\": \"LVL100074983\",\n    \"tubeBarcode\": [\n        {\n            \"row\": 1,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        }\n    ],\n    \"orientationBarcode\": [],\n    \"scanTimeAnswer\": null,\n    \"containerName\": \"96 SBS rack\",\n    \"containerUid\": \"mirage96sbs\",\n    \"demoImage\": null,\n    \"containerGuid\": \"0743fa9a-3c9c-425f-9783-cc243d798cc1\",\n    \"rawImage\": null,\n    \"annotatedImage\": null,\n    \"linearReaderImage\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Annotated Image of Scan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}/dp5/remote/v1/scan/f929965e-cde6-40d2-9ab1-d2ef16473f4b/annotated_image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scan",
+								"f929965e-cde6-40d2-9ab1-d2ef16473f4b",
+								"annotated_image"
+							]
+						},
+						"description": "Fetch the data for the rack scan that is placed on the scanner for the container unique id provided.\nImages like raw, annotated and linear images can be fetched based on the flag provided."
+					},
+					"response": [
+						{
+							"name": "Get Rack scan data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scan"
+									],
+									"query": [
+										{
+											"key": "container_uid",
+											"value": "mirage96sbs"
+										},
+										{
+											"key": "raw_image",
+											"value": "false",
+											"description": "If the raw image used for scan is required (default is false)"
+										},
+										{
+											"key": "annotated_image",
+											"value": "false",
+											"description": "If the annotated image used for scan decode is required (default is false)"
+										},
+										{
+											"key": "linear_image",
+											"value": "false",
+											"description": "If the linear reader image for the container is required (default is false)"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:04:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scanId\": \"66b45849-019e-4e5c-af3f-a0bd4138a975\",\n    \"scanTime\": 1600261470488,\n    \"containerBarcode\": \"LVL100074983\",\n    \"tubeBarcode\": [\n        {\n            \"row\": 1,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        }\n    ],\n    \"orientationBarcode\": [],\n    \"scanTimeAnswer\": null,\n    \"containerName\": \"96 SBS rack\",\n    \"containerUid\": \"mirage96sbs\",\n    \"demoImage\": null,\n    \"containerGuid\": \"0743fa9a-3c9c-425f-9783-cc243d798cc1\",\n    \"rawImage\": null,\n    \"annotatedImage\": null,\n    \"linearReaderImage\": null\n}"
+						}
+					]
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Containers",
@@ -1038,8 +1247,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Scanners",
@@ -1764,15 +1972,13 @@
 					"response": []
 				}
 			],
-			"description": "All remote calls related to scanner configured or connected or to be added in DP5",
-			"protocolProfileBehavior": {}
+			"description": "All remote calls related to scanner configured or connected or to be added in DP5"
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4edfa361-45ef-43f1-9581-02db6e9992de",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1782,7 +1988,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "eb12f9e3-b61c-47dc-bfa6-1ac537ed5b2c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1792,20 +1997,16 @@
 	],
 	"variable": [
 		{
-			"id": "0e5b390b-2a48-4adb-bcac-377efccfc144",
 			"key": "protocol",
 			"value": "http"
 		},
 		{
-			"id": "e51549d6-4353-4e6b-aa43-fb8a39b8bd17",
 			"key": "port",
 			"value": "8777"
 		},
 		{
-			"id": "29e31bf8-f02f-4b4e-b4d0-682cb00aa35a",
 			"key": "host",
 			"value": "localhost"
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
